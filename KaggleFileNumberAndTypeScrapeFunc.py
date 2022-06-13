@@ -41,7 +41,7 @@ def ScrapeFileTypes(driver):
 
 
 if __name__ == '__main__':
-    PATH = "/Users/iancampbell/Documents/WebDriver/chromedriver"
+    PATH = "Path to chromedriver"
     s = Service(PATH)
     driver = webdriver.Chrome(service=s)
 
