@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
 
-PATH = "/Users/iancampbell/Documents/WebDriver/chromedriver"
+PATH = "Path to chromedriver"
 s = Service(PATH)
 driver = webdriver.Chrome(service=s)
 
