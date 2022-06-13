@@ -7,7 +7,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 
 
-PATH = "/Users/iancampbell/Documents/WebDriver/chromedriver"
+PATH = "Path to chromedriver"
 s = Service(PATH)
 driver = webdriver.Chrome(service=s)
 
