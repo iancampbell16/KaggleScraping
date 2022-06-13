@@ -36,7 +36,7 @@ def ScrapeFile(Index):
         return ScrapeColumnNames(driver, action, tablename)
 
 
-PATH = "/Users/iancampbell/Documents/WebDriver/chromedriver"
+PATH = "Path to chromedriver"
 s = Service(PATH)
 driver = webdriver.Chrome(service=s)
 
