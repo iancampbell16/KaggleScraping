@@ -28,7 +28,7 @@ def ScrapeFile(Index):
         FirstClick = element.find_element(By.XPATH, './div/div[3]/div')
         action.move_to_element(FirstClick).click().perform()
         time.sleep(2)
-        SecondClick = element.find_element(By.XPATH, './ul/ul/div/div[3]/div')
+        SecondClick = element.find_element(By.XPATH, './ul/li/div/div[3]/div')
         action.move_to_element(SecondClick).click().perform()
         time.sleep(2)
 
@@ -53,7 +53,7 @@ try:
 
     # find list of file elements in Data Explorer
     uls = driver.find_elements(
-        By.XPATH, '//*[@id="site-content"]/div[3]/div[5]/div[2]/div[2]/div/div[2]/div[1]/div/ul/ul')
+        By.XPATH, '//*[@id="site-content"]/div[3]/div[5]/div[2]/div[2]/div/div[2]/div[1]/div/ul/li')
 
     # go through fileTypes and find indexes that are scrapable
     scrapableTypes = ['csv', 'xlsx']
