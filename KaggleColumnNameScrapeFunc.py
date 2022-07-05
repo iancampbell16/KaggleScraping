@@ -100,6 +100,9 @@ def ScrapeColumnNames(driver, action, tableName):
             if sqlCommand:
                 sqlCommand += ', '
             sqlCommand += ''.join(column[0].split('/')[0].split(' '))
+            if ''.join(column[0].split('/')[0].split(' ')) != column[0]:
+                print(column[0], ' => ',
+                      ''.join(column[0].split('/')[0].split(' ')))
             if column[1] in varc:
                 sqlCommand += ' VARCHAR(255)'
             elif column[1] in floa:
