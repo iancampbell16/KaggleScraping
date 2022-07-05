@@ -17,7 +17,7 @@ def ScrapeFileTypes(driver):
 
         # make list of uls in filesListElement and record length of list (number of files)
         uls = driver.find_elements(
-            By.XPATH, '//*[@id="site-content"]/div[3]/div[5]/div[2]/div[2]/div/div[2]/div[1]/div/ul/ul')
+            By.XPATH, '//*[@id="site-content"]/div[3]/div[5]/div[2]/div[2]/div/div[2]/div[1]/div/ul/li')
         numberOfFiles = len(uls)
 
         # find text of p class in each ul
